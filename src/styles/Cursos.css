@@ -1,0 +1,134 @@
+.contenedor-cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+.contenedor-cursos h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* Botón agregar */
+.btn-agregar {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Formulario de curso */
+.formulario-curso {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+    padding: 0 16px; /* Añade espacio interno para evitar desbordes */
+    overflow-x: hidden;
+}
+
+.campos-formulario {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptable */
+    gap: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.campos-formulario input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline-color: #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.botones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+/* Botones individuales con colores */
+.btn-guardar {
+    background-color: #16a34a; /* verde */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background-color: #007bff; /* azul oscuro */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: #06b6d4; /* cian */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-eliminar {
+    background-color: #dc2626; /* rojo */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Tabla de cursos */
+.tabla-cursos {
+    background-color: #1e3a8a;
+    color: white;
+    width: clamp(500px, 80%, 1200px);
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.tabla-encabezado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 1px solid white;
+    justify-items: center;
+}
+
+.tabla-fila {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 12px;
+    align-items: center;
+    justify-items: center;
+    border-top: 1px solid white;
+}
+
+.acciones {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0;
+}
+
+/* Modal puede heredar estilos globales si ya lo tienes */

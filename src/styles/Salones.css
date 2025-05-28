@@ -1,0 +1,109 @@
+.salones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+
+    .titulo {
+        text-align: center;
+        color: #1e3a8a;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .acciones {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .selector-sede {
+            background-color: #1e3a8a;
+            outline: none;
+            color: #fff;
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    }
+
+    .btn {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn.agregar {
+        background-color: #1d4ed8;
+        /* azul */
+    }
+
+    .btn.guardar {
+        background-color: #16a34a;
+        /* verde */
+    }
+
+    .btn.editar {
+        background-color: #06b6d4;
+        /* cian */
+    }
+
+    .btn.eliminar {
+        background-color: #dc2626;
+        /* rojo */
+    }
+
+    .btn.cancelar {
+        background-color: #007bff;
+        /* azul oscuro */
+
+    }
+
+    .formulario {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .campo {
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline-color: #ccc;
+            width: 40%;
+        }
+    }
+
+
+    .tabla-container {
+        background-color: #1e3a8a;
+        width: clamp(500px, 80%, 1200px);
+        color: white;
+        border-radius: 8px;
+        overflow-x: auto;
+
+
+        .fila {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 12px;
+            align-items: center;
+            justify-items: center;
+            border-top: 1px solid white;
+        }
+
+        .encabezado {
+            font-weight: bold;
+            border-bottom: 1px solid white;
+        }
+
+        .acciones-fila {
+            display: flex;
+            gap: 8px;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.login-container {
+    display: flex;
+    max-width: 900px;
+    margin: auto;
+    height: clamp(400px, 600px, 700px);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-left {
+    display: flex;
+    width: clamp(400px, 500px, 570px);
+    background: #fff;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 1.5rem;
+
+    .logo {
+        width: clamp(200px, 340px, 450px);
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+
+        h1 {
+            font-size: 4rem;
+            color: #262D87;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding: 1.5rem 0;
+        }
+
+        p {
+            color: #4A4A4A;
+            width: clamp(300px, 320px, 400px);
+            letter-spacing: 1.5px;
+        }
+
+        span {
+            font-size: 2.5rem;
+            padding-top: 1rem;
+        }
+
+    }
+}
+
+.login-right {
+    background-color: #262D87;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        h2 {
+            font-size: 1.3rem;
+            padding-bottom: 0.5rem;
+            color: #D9D9D9;
+        }
+
+        ::placeholder {
+            color: #4A4A4A;
+            opacity: 0.6;
+            letter-spacing: 2px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 25px;
+            padding: 0.5rem 1rem;
+
+            .icon {
+                margin-right: 0.5rem;
+                color: #4A4A4A;
+            }
+
+            input {
+                border: none;
+                outline: none;;
+                font-size: 1rem;
+                background-color: transparent;
+                color: #4A4A4A;
+            }
+        }
+
+        .btn-login {
+            width: 70%;
+            background-color: #00AEEF;
+            color: white;
+            border: none;
+            padding: 0.7rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #008ecc;
+        }
+    }
+}
