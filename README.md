@@ -31,7 +31,7 @@ Sigue estos pasos para clonar el proyecto y ejecutarlo localmente:
 git clone https://github.com/BManrriqueCastro/OrganizacionSalones_Frontend.git
 
 # 2. Entra a la carpeta del proyecto
-cd tu-repo
+cd OrganizacionSalones_Frontend
 
 # 3. Instala las dependencias
 npm install
