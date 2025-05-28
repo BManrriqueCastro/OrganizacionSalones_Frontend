@@ -1,12 +1,40 @@
-# React + Vite
+# 📚 Proyecto Frontend - Gestión Académica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el frontend de una aplicación de gestión académica que permite a los usuarios autenticarse y gestionar salones, cursos y su programación. Desarrollado con **React**.
 
-Currently, two official plugins are available:
+## 🧭 Flujo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Login**  
+   - Autenticación de usuarios registrados con validación de correo `@pio.com`.
 
-## Expanding the ESLint configuration
+2. **Dashboard**  
+   - Pantalla principal que da acceso al resto de los módulos.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. **Salones**  
+   - Visualización y gestión de salones disponibles.
+
+4. **Cursos**  
+   - Administración de cursos.
+
+5. **Programación**  
+   - Asignación de cursos a salones con horarios específicos.
+
+6. **Register**  
+   - Registro de nuevos usuarios, con restricción a correos que terminen en `@pio.com`.
+
+## 🚀 Instalación y uso
+
+Sigue estos pasos para clonar el proyecto y ejecutarlo localmente:
+
+```bash
+# 1. Clona el repositorio
+git clone https://github.com/BManrriqueCastro/OrganizacionSalones_Frontend.git
+
+# 2. Entra a la carpeta del proyecto
+cd tu-repo
+
+# 3. Instala las dependencias
+npm install
+
+# 4. Inicia el servidor de desarrollo
+npm run dev
